@@ -1,0 +1,20 @@
+server:
+   port: 8082
+spring:
+  datasource:
+    password: afsaralam15
+    url: jdbc:mysql://localhost:3306/dr?createDatabaseIfNotExist=true
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    
+# second(0-59) minute(0 - 59) hour(0 - 23) day-of-the-month(1 - 31) month(1 - 12/JAN-DEC) day-of-the-week(0 - 7/0 or 7 is Sunday, or MON-SUN)
+#scheduler:
+#    cronSync: "*/5 * * * * ?"
+#    cronCache: "*/5 * * * * ?"
+ 
